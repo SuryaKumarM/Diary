@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Diary</string>
+    <string name="Email">Username:</string>
+    <string name="username">Username</string>
+    <string name="password">password</string>
+    <string name="login">Login</string>
+    <string name="signin">Signin</string>
+    <string name="phone">Ph.no</string>
+    <string name="menuname">add_new_story</string>
+    <string name="signout">Signout</string>
+    <string name="about">About</string>
+    <string name="email">Email:</string>
+    <string name="show">"press \"+\" icon to add your story (In menu bar) "</string>
+</resources>

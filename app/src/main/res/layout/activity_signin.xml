@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".signin">
+
+    <TextView
+        style="@android:style/Widget.Material.TextView.SpinnerItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="@string/signin"
+        android:textSize="40dp"
+        android:textStyle="italic" />
+
+    <ProgressBar
+        android:id="@+id/progress_s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@android:style/Animation"
+        android:visibility="gone"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:padding="5dp"
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="#F5F6F8">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_form">
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/username_s"
+                android:layout_marginTop="10dp"
+                android:inputType="textPersonName"
+                android:fontFamily="casual"
+                android:hint="@string/username"
+                android:maxLines="1"
+                tools:ignore="InvalidId" />
+            <EditText
+                android:id="@+id/phone_s"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:hint="@string/phone"
+                android:layout_marginTop="15dp"
+                android:fontFamily="casual"/>
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/email_s"
+                android:layout_marginTop="15dp"
+                android:inputType="textEmailAddress"
+                android:fontFamily="casual"
+                android:hint="Email:"
+
+                tools:ignore="InvalidId" />
+            <EditText
+                android:id="@+id/password_s"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:layout_marginTop="15dp"
+                android:fontFamily="casual"/>
+
+            <Button
+                android:id="@+id/sign_s"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/signin"
+                android:fontFamily="casual"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/transparent"
+                />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

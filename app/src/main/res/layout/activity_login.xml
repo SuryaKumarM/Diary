@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:gravity="center"
+
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+    <TextView
+        style="@android:style/Widget.Material.TextView.SpinnerItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textSize="40dp"
+        android:textStyle="italic" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="@android:style/Animation"
+        android:layout_width="70dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="5dp"
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="#F5F6F8">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_form">
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:layout_marginTop="5dp"
+            android:inputType="text"
+            android:fontFamily="casual"
+            android:hint="@string/email"
+            android:maxLines="1"
+            tools:ignore="InvalidId" />
+        <EditText
+            android:id="@+id/password"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:layout_marginTop="20dp"
+            android:fontFamily="casual"/>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="casual"
+            android:text="@string/login"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:background="@android:color/transparent"
+        android:fontFamily="casual"
+        android:text="For sign-up click here..."
+        android:textSize="15sp"
+        android:textStyle="normal" />
+
+    <Button
+        android:id="@+id/forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:background="@android:color/transparent"
+        android:fontFamily="casual"
+        android:text="Forgot password"
+        android:textSize="15sp"
+        android:textStyle="normal" />
+
+
+</LinearLayout>
